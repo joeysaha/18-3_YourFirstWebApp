@@ -9,5 +9,7 @@ get '/portfolio' do
 end
 
 get '/aboutme' do
+  @skills = ['git', 'HTML', 'CSS', 'Ruby']
+  @interests = ['cats', 'art', 'music', 'films', 'coffee']
   erb :meinfo
 end
