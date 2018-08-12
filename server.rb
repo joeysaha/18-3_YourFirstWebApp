@@ -18,3 +18,11 @@ get '/favorites' do
   @fav_links = ['http://www.imgur.com', 'http://www.reddit.com', 'http://google.com', 'http://soundcloud.com', 'http://facebook.com']
   erb :favorites
 end
+
+get '/' do
+  redirect to('/home')
+end
+
+get '/gallery' do
+  redirect to('portfolio')
+end
